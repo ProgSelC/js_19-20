@@ -1,0 +1,89 @@
+.header__logo
+  color: $darkTextColor
+  img
+    margin-right: 5px
+    float: left
+  h1
+    font-size: 30px
+    line-height: 24px
+
+.header__logo--shift
+  font-size: 12px
+  text-transform: uppercase
+
+.header__social-links
+  margin-top: 10px
+  float: right
+  a
+    display: inline-block
+    margin-right: 20px
+
+.header__social-links--facebook
+  @include sprite($social_facebook)
+  &:hover
+    @include sprite($social_facebook-hov)
+
+.header__social-links--twitter
+  @include sprite($social_twitter)
+  &:hover
+    @include sprite($social_twitter-hov)
+
+.header__social-links--rss
+  @include sprite($social_rss)
+  &:hover
+    @include sprite($social_rss-hov)
+
+.header__social-links--linkedin
+  @include sprite($social_linkedin)
+  &:hover
+    @include sprite($social_linkedin-hov)
+
+.header__social-links--google
+  @include sprite($social_google)
+  &:hover
+    @include sprite($social_google-hov)
+
+.header__nav
+  margin-top: 35px
+  background: $bcgDarkColor
+  ul
+    font-size: 0
+  li
+    display: inline-block
+    padding: 19px 40px
+    border-left: 1px solid #181a1d
+    &:first-child
+      border-left: 0
+      background: $brightPrimary
+    &:last-child
+      border-right: 1px solid #181a1d
+  a
+    color: #fff
+    font-family: 'ubuntu condensed'
+    font-size: 14px
+    text-decoration: none
+    &:hover
+      color: $brightSecondary
+  form
+    position: relative
+    float: right
+  input
+    position: relative
+    top: 8px
+    width: 240px
+    height: 40px
+    margin-right: 8px
+    padding-left: 15px
+    border: 1px solid #000
+    background: #35383c
+    color: #626466
+    outline: 0
+  button
+    position: absolute
+    top: 22px
+    left: 210px
+    background: transparent
+    border: 0
+    cursor: pointer
+    outline: 0
+    @include sprite($search)

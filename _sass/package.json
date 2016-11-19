@@ -1,0 +1,27 @@
+{
+  "name": "js_19-20",
+  "version": "0.1.0",
+  "description": "GoIT homework",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProgSelC/js_19-20.git"
+  },
+  "author": "ProgSelC",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.1",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp.spritesmith": "^6.2.1",
+    "imagemin-pngquant": "^5.0.0"
+  }
+}

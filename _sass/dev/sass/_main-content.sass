@@ -1,0 +1,199 @@
+.features__wrapper
+  margin: 50px 0
+  overflow: hidden
+
+.features__container
+  position: relative
+  padding-left: 108px
+  width: 33.3%
+  float: left
+
+.features__number
+  position: absolute
+  top: 0
+  left: 0
+  color: rgba(100, 100, 100, .2)
+  font-size: 60px
+
+.features__icon
+  margin-top: 15px
+
+.features__icon--first
+   @include sprite($features1)
+
+.features__icon--second
+  @include sprite($features2)
+
+.features__icon--third
+  @include sprite($features3)
+
+.features__title
+  margin: 10px 0 15px
+  font-size: 20px
+
+.features__text
+  padding-right: 30px
+  padding-bottom: 15px
+  color: $plainTextColor
+  font-family: Arial
+  font-size: 13px
+  text-align: justify
+  line-height: 20px
+
+.features__link
+  padding-right: 25px
+  background: url(../img/link_arrow.png) no-repeat
+  background-position: right
+  color: $plainTextColor
+  font-size: 13px
+  text-decoration: none
+  &:hover
+    color: $brightPrimary
+    background: url(../img/link_arrow-hov.png) no-repeat
+    background-position: right
+
+.services__container
+  display: flex
+  justify-content: space-between
+
+.services__title
+  padding-bottom: 40px
+  font-size: 24px
+
+.services__item
+  width: 23%
+  float: left
+  text-align: center
+
+.services__link
+  display: block
+  position: relative
+  color: inherit
+  font-size: 16px
+  text-decoration: none
+  img
+    width: 100%
+    padding-bottom: 30px
+  &:hover
+    color: $brightSecondary
+  &:hover .services__link--layout
+    display: block
+
+.services__link--layout
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: calc(100% - 54px)
+  background: rgba(26, 140, 236, 0.7)
+  &::before
+    display: block
+    position: absolute
+    top: 50%
+    left: calc(50% - 16px)
+    width: 33px
+    height: 3px
+    background: #fff
+    content: ""
+  &::after
+      display: block
+      position: absolute
+      top: calc(50% - 16px)
+      left: 50%
+      width: 3px
+      height: 35px
+      background: #fff
+      content: ""
+
+.news__title, .banners__title
+  margin-bottom: 45px
+  padding-left: 15px
+  font-size: 24px
+  color: #2a2d32
+
+.news__item
+  display: flex
+  padding-left: 15px
+  margin-bottom: 30px
+
+.news__content
+  padding-left: 30px
+  color: $plainTextColor
+  font-family: Arial
+
+.news__image
+  position: relative
+
+.news__date--moth, .news__date--date
+  position: absolute
+  left: -17px
+  width: 40px
+  height: 40px
+  text-align: center
+  line-height: 40px
+
+.news__date--moth
+  top: 12px
+  background: $brightPrimary
+  color: #fff
+  font-size: 15px
+  text-align: center
+
+.news__date--date
+  top: 52px
+  background: $brightSecondary
+  color: $darkTextColor
+  font-size: 18px
+
+.news__name
+  display: block
+  margin-bottom: 10px
+  color: $darkTextColor
+  font-family: 'ubuntu medium'
+  font-size: 16px
+  text-decoration: none
+  &:hover
+    color: $brightPrimary
+
+.news__comments--author, .news__comments--quantity
+  color: $brightPrimary
+  font-weight: bold
+  text-decoration: none
+
+.news__article
+  margin-top: 15px
+  font-size: 13px
+  text-align: justify
+  line-height: 20px
+
+.banners__container
+  margin-left: 15px
+
+.parthners__container
+  display: flex
+  margin: 35px 0
+
+.parthners--logo
+  width: calc(100% / 6)
+  text-align: center
+
+.refferences__container
+  display: flex
+  justify-content: space-between
+
+.refferences__item
+  width: 22%
+
+.refferences__title
+  margin-bottom: 35px
+  font-size: 16px
+
+.refferences__link
+  display: block
+  padding: 10px 0
+  color: $plainTextColor
+  border-bottom: 1px solid rgba(100, 100, 100, .4)
+  text-decoration: none
+  &:hover
+    color: $brightPrimary
